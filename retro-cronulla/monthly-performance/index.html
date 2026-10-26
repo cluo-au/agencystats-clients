@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Monthly performance | Retro Cronulla</title>
+<meta property="og:title" content="Retro Cronulla &middot; Your hub">
+<meta property="og:description" content="Your reports, stats and updates, all in one place.">
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700,800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#EEEEEE;color:#222;font-family:Switzer,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1000px;margin:0 auto;padding:0 24px}
+.topbar{background:#fff;padding:10px 0;border-bottom:1px solid #E2E2E2}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.topbar .right{display:flex;align-items:center;gap:14px}
+.siteline{color:rgba(0,0,0,.55);font-size:12.5px;display:flex;align-items:center;gap:5px;transition:color .15s}
+.siteline:hover{color:#111}
+.topdiv{width:1px;height:13px;background:rgba(0,0,0,.14)}
+.byline span{color:rgba(0,0,0,.55);font-size:11px;letter-spacing:.13em;text-transform:uppercase}
+.hero{background:#fff;border-bottom:1px solid #E2E2E2;position:relative;overflow:hidden}
+.hero:before{content:'';position:absolute;left:-6%;top:-140px;width:520px;height:380px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,128,255,.22),rgba(255,128,255,0))}
+.hero:after{content:'';position:absolute;left:22%;top:-120px;width:480px;height:360px;border-radius:50%;background:radial-gradient(closest-side,rgba(175,145,247,.22),rgba(175,145,247,0))}
+.hero .wrap{display:flex;align-items:center;gap:36px;position:relative;z-index:1}
+.hero-copy{flex:1;padding:50px 0;min-width:0}
+.hero-char{flex:none;align-self:flex-end;padding-top:18px}
+.hero-char img{height:270px;width:auto;display:block;mix-blend-mode:multiply}
+.eyebrow{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:#7a5fd6;font-weight:700;margin:0 0 12px}
+h1{font-weight:700;font-size:42px;line-height:1.1;margin:0;color:#111;letter-spacing:-.025em}
+.rule{width:56px;height:4px;background:linear-gradient(90deg,#FF80FF,#AF91F7);margin:22px 0 0;border-radius:2px}
+section{padding:34px 0}
+h2{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:#858585;font-weight:700;margin:0 0 20px}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;align-items:stretch}
+.tile{position:relative;border-radius:14px;padding:22px 20px 20px;display:flex;flex-direction:column;overflow:hidden;background:linear-gradient(135deg,#161616 0%,#2a2a2a 100%);transition:transform .15s,box-shadow .15s}
+.tile:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.14)}
+.tile h3{font-size:16.5px;font-weight:700;margin:0 0 3px;color:#fff}
+.tile p{font-size:13.5px;color:rgba(255,255,255,.7);margin:0;line-height:1.4}
+.dash{margin:0 0 16px;border-radius:10px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,.35)}
+.dash svg{display:block}
+.lbl-m{display:none}
+.two{display:grid;grid-template-columns:1.35fr 1fr;gap:22px;align-items:start}
+.panel{background:#fff;border:1px solid #E2E2E2;border-radius:14px;padding:6px 22px}
+.item{display:flex;gap:15px;padding:17px 0;border-top:1px solid #E8E8E8}
+.item:first-child{border-top:0}
+.item .it{font-size:15.5px;font-weight:700;color:#111;margin:0 0 2px}
+.item .ib{font-size:13.5px;color:#555;margin:0;line-height:1.5}
+.ic{flex:none;margin-top:1px}
+.side{background:#111;border-radius:14px;padding:2px 22px 22px;color:#fff}
+.side .item{border-top:1px solid rgba(255,255,255,.14)}
+.side .item .ic{color:#FF80FF}
+.side .it{color:#fff}
+.side .ib{color:rgba(255,255,255,.72)}
+.sidehead{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:#AF91F7;font-weight:700;margin:0;padding:22px 0 2px}
+.bookbtn{display:inline-flex;align-items:center;gap:6px;margin-top:16px;background:#FF80FF;color:#111;font-size:13px;font-weight:700;padding:9px 18px;border-radius:999px;transition:filter .15s}
+.bookbtn:hover{filter:brightness(1.06)}
+.fbanner{display:block;width:100%;height:auto}
+footer{background:#111;color:rgba(255,255,255,.66);padding:26px 0}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;font-size:13px}
+footer a{color:rgba(255,255,255,.88)}
+footer a:hover{color:#fff}
+.fl{display:flex;align-items:center;gap:14px}.fl span{padding-left:14px;border-left:1px solid rgba(255,255,255,.22)}
+@media(max-width:880px){.hero .wrap{gap:22px}.hero-char img{height:230px}.tiles{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}h1{font-size:32px}}
+@media(max-width:620px){.fl{flex-direction:column;align-items:flex-start;gap:8px}.fl span{padding-left:0;border-left:0}.topbar .siteline span.long{display:none}.topbar img.client{height:40px!important}}
+/* Mobile: hero side-by-side, card tiles, pop (5 Oct 2026) */
+@media(max-width:620px){
+.hero .wrap{flex-direction:row;align-items:center;gap:14px}
+.hero-copy{padding:26px 0}
+.hero-char{align-self:flex-end}
+.hero-char img{height:250px}
+h1{font-size:26px}
+.lbl-d{display:none}.lbl-m{display:inline}
+.tile{padding:14px 13px 14px}
+.tile p{display:none}
+.dash{margin:0 0 10px}
+@keyframes tilepop{0%,8%{transform:scale(1)}4%{transform:scale(1.045)}100%{transform:scale(1)}}
+.tile{animation:tilepop 8s ease-in-out infinite}
+.tile:nth-child(1){animation-delay:0s}.tile:nth-child(2){animation-delay:2s}.tile:nth-child(3){animation-delay:4s}.tile:nth-child(4){animation-delay:6s}
+}
+/* 2x2 tiles on mobile + card shape (5 Oct 2026) */
+@media(max-width:620px){
+.tiles{grid-template-columns:1fr 1fr;gap:10px}
+.tile{aspect-ratio:1/0.9}
+.tile h3{margin-top:auto;font-size:15px}
+.tile:nth-child(3):last-child{grid-column:1 / -1;aspect-ratio:auto;flex-direction:row;align-items:center;gap:14px}
+.tile:nth-child(3):last-child .dash{width:46%;margin:0;flex:none}
+.tile:nth-child(3):last-child h3{margin-top:0}
+}
+@media(prefers-reduced-motion:reduce){.tile{animation:none}}
+
+.sub{padding-top:44px;padding-bottom:56px}
+.back{font-size:13px;color:#7a5fd6;font-weight:700;display:inline-block;margin-bottom:18px}
+.card{background:#fff;border-radius:14px;padding:22px 24px;display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:12px;border:1px solid #E2E2E2}
+.card .t{font-weight:700;color:#111;margin:0}.card .d{font-size:13.5px;color:#555;margin:2px 0 0}
+.btn{flex:none;background:#FF80FF;color:#111;font-size:13px;font-weight:700;padding:9px 18px;border-radius:999px}
+.note{font-size:14px;color:#555}
+@media(max-width:560px){.card{flex-direction:column;align-items:flex-start}}
+</style></head><body>
+<div class="topbar"><div class="wrap">
+  <img class="client" src="../retro-cronulla-logo.png" alt="Retro Cronulla" style="height:54px;width:auto;display:block">
+  <div class="right">
+    <a class="siteline" href="https://www.retrocronulla.com.au" target="_blank" rel="noopener"><span class="long">retrocronulla.com.au</span> &nearr;</a>
+    <div class="topdiv"></div>
+    <div class="byline"><span>Managed by Mars Design</span></div>
+  </div>
+</div></div>
+<div class="wrap sub"><a class="back" href="../">&larr; Back to your hub</a>
+<p class="eyebrow">Retro Cronulla</p><h1>Monthly performance</h1><p class="note" style="margin:10px 0 26px">Your quarter plan and monthly reports. Each new report is added here at the end of the month.</p>
+<div class="card"><div><p class="t">Your first quarter plan</p><p class="d">Where Retro sits today on Google, what we found, and the plan for October to December.</p></div><a class="btn" href="Retro%20Cronulla%20-%20Your%20First%20Quarter.pdf" target="_blank" rel="noopener">Open PDF</a></div>
+<div class="card"><div><p class="t">October report</p><p class="d">Lands here at the start of November.</p></div></div></div>
+<div class="fbwrap" style="background:linear-gradient(to bottom,#EEEEEE 0,#EEEEEE 50%,#111111 50%,#111111 100%)"><img class="fbanner" src="../retro-cronulla-footer-banner.jpg" alt="" aria-hidden="true" style="-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 16%,#000 72%,transparent 100%);mask-image:linear-gradient(to bottom,transparent 0,#000 16%,#000 72%,transparent 100%)"></div>
+<footer><div class="wrap">
+  <div class="fl"><a href="https://www.marsdesign.com.au" target="_blank" rel="noopener"><img src="../mars-logo-white.svg" alt="Mars Design" style="height:24px;width:auto;display:block"></a><span>Retro Cronulla &middot; Managed by Mars Design</span></div>
+  <div><a href="mailto:mario@marsdesign.com.au">mario@marsdesign.com.au</a> &nbsp;&middot;&nbsp; <a href="https://www.marsdesign.com.au" target="_blank" rel="noopener">marsdesign.com.au</a></div>
+</div></footer>
+<div style="height:4px;background:linear-gradient(90deg,#FF80FF,#AF91F7)"></div>
+</body>
+</html>
